@@ -48,4 +48,4 @@ RUN npm -v
 # ACCESS CONTAINER BASH
 # 
 # docker exec -it <id> bash
-# cd app && execute npm install or build
+# cd app && execute npm install or npm run build
