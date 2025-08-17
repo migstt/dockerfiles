@@ -1,6 +1,3 @@
-## About
-Personal repository for learning Docker. This repo is just for experiments and practice.
-
 ## Overview
 This repository is for learning and experimenting with docker.  
 it will serve as a collection of dockerfiles for different use cases.  
