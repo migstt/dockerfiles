@@ -1,0 +1,10 @@
+# start from official mysql
+FROM mysql:8.0
+
+# set root password and default database
+# in production you should use secrets not hardcoded passwords
+ENV MYSQL_ROOT_PASSWORD=root
+ENV MYSQL_DATABASE=laravel
+
+# expose mysql port
+EXPOSE 3306

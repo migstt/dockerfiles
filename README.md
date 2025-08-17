@@ -1,14 +1,19 @@
-## Overview
+## About
+Personal repository for learning Docker. This repo is just for experiments and practice.
 
-This repository is for learning and experimenting with Docker. It will serve as a collection of Dockerfiles for different use cases. Currently, it contains a Dockerfile for managing Node.js versions.
+## Overview
+This repository is for learning and experimenting with docker.  
+it will serve as a collection of dockerfiles for different use cases.  
+currently it contains dockerfiles for php/laravel, mysql, and nextjs  
 
 ## Files
 
-| File                               | Description                          |
-|------------------------------------|--------------------------------------|
-| node-version-manager-dockerfile    | Dockerfile for managing Node.js versions |
+| File                         | Description                                   |
+|------------------------------|-----------------------------------------------|
+| Dockerfile.laravel           | dockerfile for setting up a php/laravel app   |
+| Dockerfile.mysql             | dockerfile for running a mysql database       |
+| Dockerfile.next              | dockerfile for building and running nextjs    |
 
 ## Notes
-
-- This repository is for practice and will expand with more Dockerfiles over time.
-- Files are experimental.
+- these files are for practice and will expand with more dockerfiles over time  
+- everything here is experimental and may change anytime

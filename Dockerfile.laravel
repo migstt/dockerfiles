@@ -1,0 +1,32 @@
+# start from an official php image with fpm
+FROM php:8.2-fpm
+
+# install system dependencies for laravel
+# note: gd is for image handling, pdo_mysql for mysql, zip for composer
+RUN apt-get update && apt-get install -y \
+    git \
+    curl \
+    libpng-dev \
+    libjpeg-dev \
+    libfreetype6-dev \
+    libonig-dev \
+    libxml2-dev \
+    zip \
+    unzip \
+    && docker-php-ext-configure gd --with-freetype --with-jpeg \
+    && docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd
+
+# install composer inside container
+COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
+
+# set workdir where laravel code will live
+WORKDIR /var/www
+
+# copy laravel project files (optional, better with docker-compose volume mount)
+COPY . .
+
+# expose php-fpm port
+EXPOSE 9000
+
+# run php-fpm when container starts
+CMD ["php-fpm"]
