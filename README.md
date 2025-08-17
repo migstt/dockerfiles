@@ -1,7 +1,5 @@
 ## Overview
-This repository is for learning and experimenting with docker.  
-it will serve as a collection of dockerfiles for different use cases.  
-currently it contains dockerfiles for php/laravel, mysql, and nextjs  
+This repository is for learning and experimenting with docker. It will serve as a collection of dockerfiles for different use cases. Currently it contains dockerfiles for php/laravel, mysql, and nextjs  
 
 ## Files
 
